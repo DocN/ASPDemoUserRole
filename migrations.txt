@@ -1,0 +1,22 @@
+dotnet ef migrations add CreateIdentitySchema
+dotnet ef database update
+dotnet ef migrations add CustomUserData
+dotnet ef database update
+dotnet ef migrations add FirstLastName
+dotnet ef database update
+
+dotnet ef migrations add EditUsername
+dotnet ef database update
+
+dotnet ef migrations add AddedPhone
+dotnet ef database update
+
+dotnet ef migrations add AddedAddress
+dotnet ef database update
+
+
+dotnet ef migrations add AddedAddress2
+dotnet ef database update
+
+dotnet ef migrations add AddedAddress2
+
