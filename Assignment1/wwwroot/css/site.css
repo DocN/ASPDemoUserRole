@@ -35,3 +35,11 @@ body {
         display: none;
     }
 }
+.compoundImage {
+    width:500px;
+    height:500px;
+}
+
+.centerText {
+    text-align:center;
+}

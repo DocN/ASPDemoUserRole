@@ -81,3 +81,4 @@ C:\ASP\A1\Assignment1\obj\Debug\netcoreapp2.1\Assignment1.dll
 C:\ASP\A1\Assignment1\obj\Debug\netcoreapp2.1\Assignment1.pdb
 C:\ASP\A1\Assignment1\obj\Debug\netcoreapp2.1\Assignment1.csproj.CopyComplete
 C:\ASP\A1\Assignment1\obj\Debug\netcoreapp2.1\Razor\Views\Compound\Index.g.cshtml.cs
+C:\ASP\A1\Assignment1\obj\Debug\netcoreapp2.1\Razor\Views\Compound\CalculateCompoundValue.g.cshtml.cs
