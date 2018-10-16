@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Assignment1.Areas.Identity.Data;
+using Assignment1.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -30,13 +33,18 @@ namespace Assignment1
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
+            services.AddIdentity<Assignment1User, IdentityRole>(
+            options => options.Stores.MaxLengthForKeys = 128)
+            .AddEntityFrameworkStores<Assignment1Context>()
+            .AddDefaultUI()
+            .AddDefaultTokenProviders();
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, Assignment1Context context, RoleManager<IdentityRole> roleManager)
         {
             if (env.IsDevelopment())
             {
@@ -58,6 +66,7 @@ namespace Assignment1
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+            DummyData.Initialize(context, roleManager).Wait();// seed here
         }
     }
 }

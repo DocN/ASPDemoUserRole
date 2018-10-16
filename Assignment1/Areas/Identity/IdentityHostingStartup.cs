@@ -20,8 +20,6 @@ namespace Assignment1.Areas.Identity
                     options.UseSqlServer(
                         context.Configuration.GetConnectionString("Assignment1ContextConnection")));
 
-                services.AddDefaultIdentity<Assignment1User>()
-                    .AddEntityFrameworkStores<Assignment1Context>();
             });
         }
     }
