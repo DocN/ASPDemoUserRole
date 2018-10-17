@@ -83,3 +83,4 @@ C:\ASP\A1\Assignment1\obj\Debug\netcoreapp2.1\Assignment1.csproj.CopyComplete
 C:\ASP\A1\Assignment1\obj\Debug\netcoreapp2.1\Razor\Views\Compound\Index.g.cshtml.cs
 C:\ASP\A1\Assignment1\obj\Debug\netcoreapp2.1\Razor\Views\Compound\CalculateCompoundValue.g.cshtml.cs
 C:\asp\A1\Assignment1\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Login.g.cshtml.cs
+C:\asp\A1\Assignment1\obj\Debug\netcoreapp2.1\Razor\Views\RoleManager\Index.g.cshtml.cs

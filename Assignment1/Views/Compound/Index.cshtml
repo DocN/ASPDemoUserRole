@@ -8,6 +8,8 @@
 }
 @if (SignInManager.IsSignedIn(User))
 {
+    @if(User.IsInRole("Admin") || User.IsInRole("Member"))
+    {
     <h2>Compound Interest Calculator</h2>
     <div class="container">
         <div class="row">
@@ -42,5 +44,6 @@
             </div>
         </div>
     </div>
+    }
 }
 
