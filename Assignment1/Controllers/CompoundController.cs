@@ -9,6 +9,7 @@ namespace Assignment1.Controllers
 {
     public class CompoundController : Controller
     {
+        public static Assignment1Context context;
         public IActionResult Index()
         {
             return View();

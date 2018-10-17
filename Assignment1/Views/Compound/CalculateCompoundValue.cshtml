@@ -1,40 +1,48 @@
-﻿
+﻿@using Microsoft.AspNetCore.Identity
+@using Assignment1.Areas.Identity.Data
+
+@inject SignInManager<Assignment1User> SignInManager
+@inject UserManager<Assignment1User> UserManager
+
 @{
     ViewData["Title"] = "CalculateCompoundValue";
 }
-<div class="container centerText">
-    <div class="row">
-        <div class="col-lg-3"></div>
-        <div class="col-lg-6">
-            <img class="img-responsive" src="https://www.thecalculatorsite.com/images/compound-interest-formula-diagram.png" />
-        </div>
-        <div class="col-lg-3"></div>
-    </div>
-    <div class="row">
-        <div class="col-lg-12">
-            <h1>Principal: @Model.Principal</h1>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-12">
-            <h1>Rate: @Model.Rate</h1>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-12">
-            <h1>Number: @Model.Number</h1>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-12">
-            <h1>Time: @Model.Time</h1>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-12">
-            <h1>Result: @Model.Result</h1>
-        </div>
-    </div>
-</div>
 
+@if (SignInManager.IsSignedIn(User))
+{
+    <div class="container centerText">
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6">
+                <img class="img-responsive" src="https://www.thecalculatorsite.com/images/compound-interest-formula-diagram.png" />
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Principal: @Model.Principal</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Rate: @Model.Rate</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Number: @Model.Number</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Time: @Model.Time</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Result: @Model.Result</h1>
+            </div>
+        </div>
+    </div>
+}
 

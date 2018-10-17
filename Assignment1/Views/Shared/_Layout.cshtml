@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity
+@using Assignment1.Areas.Identity.Data
+
+@inject SignInManager<Assignment1User> SignInManager
+@inject UserManager<Assignment1User> UserManager
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -33,6 +38,10 @@
                     <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    @if (SignInManager.IsSignedIn(User))
+                    {
+                        <li><a asp-area="" asp-controller="Compound" asp-action="Index">Compound Calculator</a></li>
+                    }
                 </ul>
                 <!--<partial name="_LoginNav" />-->
                 <partial name="_LoginPartial" />

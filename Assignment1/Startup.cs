@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Assignment1.Areas.Identity.Data;
+using Assignment1.Controllers;
 using Assignment1.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -17,6 +18,7 @@ namespace Assignment1
 {
     public class Startup
     {
+        
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -67,6 +69,7 @@ namespace Assignment1
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
             DummyData.Initialize(context, roleManager).Wait();// seed here
+            CompoundController.context = context;
         }
     }
 }
