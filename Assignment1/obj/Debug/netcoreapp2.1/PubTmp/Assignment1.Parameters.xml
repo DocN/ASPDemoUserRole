@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="Assignment120181017082958" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\asp\\A1\\Assignment1\\obj\\Debug\\netcoreapp2\.1\\PubTmp\\Out\\$" />
+  </parameter>
+</parameters>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAgHDgl5GoQ0C8nGYvru3vkQAAAAACAAAAAAAQZgAAAAEAACAAAACOJVSXMirKBhmkF3C3BR9vCJmI7Jfmcc0pNjjED/T72wAAAAAOgAAAAAIAACAAAADRps28rga8d/c38O82lusFMwjLsDtdqTS4DLEA+BgFrIAAAABWMA10VCmWuzdwObwuz+bbym+40J9LlQnlcJZbXxPCNocqE/BFPctlxtaXjRwU8WgCi/TxazoZLeMmwONpfHqW3HKPp2sAOXooJKKNc+uPd+QLZID6+JMHqQtXRYE1FpucZ17Dux6lKoQfYb+V3e4hhUJZQcZCEvwzabCgkVhe/kAAAAAxpzNgEasOhjRPrmOzhKSFrjM3GgGJOI6sh9lhG12JSs8gnWODWJHLsIDrTQFiaylnnhKS/8+dv5g+qsgsgiTD</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="Assignment1ContextConnection">
+      <Value>Data Source=tcp:assignment120181017085219dbserver.database.windows.net,1433%3bInitial Catalog=Assignment120181017085219_db%3bUser Id=DrNserver%40assignment120181017085219dbserver%3bPassword=vCt-vg7%3f5QjS%24sWy</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

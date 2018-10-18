@@ -141,7 +141,7 @@ using Assignment1.Models;
             WriteLiteral("\r\n                    </td>\r\n                    <td>\r\n                        ");
             EndContext();
             BeginContext(1145, 70, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "01e45bb876654445bd10821e8ec78cee", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "31f1349ab4c64cb18fceb8282b76a7b5", async() => {
                 BeginContext(1200, 11, true);
                 WriteLiteral("Change Role");
                 EndContext();
@@ -176,7 +176,7 @@ using Assignment1.Models;
             WriteLiteral(" |\r\n                        ");
             EndContext();
             BeginContext(1243, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6c575f2224f849dd853ef97353b05055", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c320dc3dcbb14ad891bad9610bbc4280", async() => {
                 BeginContext(1294, 11, true);
                 WriteLiteral("Delete User");
                 EndContext();

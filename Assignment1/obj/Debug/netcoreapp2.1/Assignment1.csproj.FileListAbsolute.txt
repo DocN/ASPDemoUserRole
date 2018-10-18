@@ -89,3 +89,4 @@ C:\asp\A1\Assignment1\obj\Debug\netcoreapp2.1\Razor\Views\UserManager\DeleteUser
 C:\asp\A1\Assignment1\obj\Debug\netcoreapp2.1\Razor\Views\UserManager\ChangeUserRole.g.cshtml.cs
 C:\asp\A1\Assignment1\obj\Debug\netcoreapp2.1\Razor\Views\RoleManager\Delete.g.cshtml.cs
 C:\asp\A1\Assignment1\obj\Debug\netcoreapp2.1\Razor\Views\RoleManager\Create.g.cshtml.cs
+C:\asp\A1\Assignment1\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
