@@ -1,0 +1,79 @@
+﻿@using Assignment1.Areas.Identity.Data
+@using Microsoft.AspNetCore.Identity
+@using Assignment1.Models
+@model ModelContainer
+
+@{
+    ViewData["Title"] = "Change User Role";
+}
+@if (User.IsInRole("Admin"))
+{
+    <h2>Change User Role Confirmation</h2>
+
+    <div>
+        <hr />
+
+        <div class="container centerText">
+            @if ((Model.GetModel<Assignment1User>().Email) == "a @a.a")
+            {
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>You can't Change the primary admin account!!!!!</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <a asp-action="Index">Back to List</a>
+                </div>
+            }
+            else
+            {
+                <div class="row">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-6">
+                        <h3>@Html.DisplayNameFor(model => model.GetModel<Assignment1User>().Id): @Html.DisplayFor(model => model.GetModel<Assignment1User>().Id)</h3>
+                        <h3>@Html.DisplayNameFor(model => model.GetModel<Assignment1User>().UserName): @Html.DisplayFor(model => model.GetModel<Assignment1User>().UserName)</h3>
+                        <h3>@Html.DisplayNameFor(model => model.GetModel<Assignment1User>().Email): @Html.DisplayFor(model => model.GetModel<Assignment1User>().Email)</h3>
+                        <h3>Current Role(s):</h3>
+                        @foreach (var item in Model.GetModel<UserSpecs>().CurrentRole)
+                        {
+                            <form asp-action="RemoveFromRole">
+                                <h4>
+                                    <input value="@item" type="text" disabled="disabled" />
+                                    <input type="hidden" asp-for="@item" />
+                                    <input type="hidden" asp-for="GetModel<Assignment1User>().Id" /> <input type="submit" value="Remove From Role" class="btn btn-default" />
+                                </h4>
+                             </form>
+                        }
+                        </div>
+                    <div class="col-lg-3"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-6">
+                        <h1>Select a New Role</h1>
+                    </div>
+                    <div class="col-lg-3"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-6">
+                        <form asp-action="Save">
+                            <select name="selectedRole">
+                                @foreach (var item in Model.GetModel<UserSpecs>().AvailableRoles)
+                                {
+                                    <option value="@item">@item</option> 
+                                }
+                            </select>
+                            <br />
+                            <br />
+                            <input type="hidden" asp-for="GetModel<Assignment1User>().Id" />
+                            <input type="submit" value="Add Role" class="btn btn-default" /> |
+                            <a asp-action="Index">Back to List</a>
+                        </form>
+                    </div>
+                    <div class="col-lg-3"></div>
+                </div>
+            }
+        </div>
+    </div>
+}

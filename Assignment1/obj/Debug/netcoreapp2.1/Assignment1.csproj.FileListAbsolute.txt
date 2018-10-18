@@ -84,3 +84,8 @@ C:\ASP\A1\Assignment1\obj\Debug\netcoreapp2.1\Razor\Views\Compound\Index.g.cshtm
 C:\ASP\A1\Assignment1\obj\Debug\netcoreapp2.1\Razor\Views\Compound\CalculateCompoundValue.g.cshtml.cs
 C:\asp\A1\Assignment1\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Login.g.cshtml.cs
 C:\asp\A1\Assignment1\obj\Debug\netcoreapp2.1\Razor\Views\RoleManager\Index.g.cshtml.cs
+C:\asp\A1\Assignment1\obj\Debug\netcoreapp2.1\Razor\Views\UserManager\Index.g.cshtml.cs
+C:\asp\A1\Assignment1\obj\Debug\netcoreapp2.1\Razor\Views\UserManager\DeleteUser.g.cshtml.cs
+C:\asp\A1\Assignment1\obj\Debug\netcoreapp2.1\Razor\Views\UserManager\ChangeUserRole.g.cshtml.cs
+C:\asp\A1\Assignment1\obj\Debug\netcoreapp2.1\Razor\Views\RoleManager\Delete.g.cshtml.cs
+C:\asp\A1\Assignment1\obj\Debug\netcoreapp2.1\Razor\Views\RoleManager\Create.g.cshtml.cs

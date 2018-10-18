@@ -12,6 +12,8 @@ namespace Assignment1.Models
     public class Assignment1Context : IdentityDbContext<Assignment1User>
     {
         public DbSet<Assignment1User> UserData { get; set; }
+        public DbSet<IdentityRole> IdentRole { get; set; }
+ 
         public Assignment1Context(DbContextOptions<Assignment1Context> options)
             : base(options)
         {

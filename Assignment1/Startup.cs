@@ -46,7 +46,7 @@ namespace Assignment1
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, Assignment1Context context, RoleManager<IdentityRole> roleManager)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, Assignment1Context context, RoleManager<IdentityRole> roleManager, UserManager<Assignment1User> userManager)
         {
             if (env.IsDevelopment())
             {
@@ -68,7 +68,7 @@ namespace Assignment1
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
-            DummyData.Initialize(context, roleManager).Wait();// seed here
+            DummyData.Initialize(context, roleManager, userManager).Wait();// seed here
             CompoundController.context = context;
         }
     }

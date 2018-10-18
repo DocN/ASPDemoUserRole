@@ -88,7 +88,7 @@ using Assignment1.Areas.Identity.Data;
             WriteLiteral("    <h2>Compound Interest Calculator</h2>\r\n    <div class=\"container\">\r\n        <div class=\"row\">\r\n            <div class=\"col-sm-6\">\r\n                ");
             EndContext();
             BeginContext(496, 1224, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "061e474b80864fe694649664e8941bd4", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5ece8d2fad4743d1990548887559429e", async() => {
                 BeginContext(557, 1156, true);
                 WriteLiteral(@"
                     <fieldset>
