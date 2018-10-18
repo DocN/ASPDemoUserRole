@@ -1,4 +1,4 @@
-Ryan Chau A00949065 031247ryan@gmail.com
+Ryan Chau 
 Jesse Goretz
 Things not completed
 -Nothing.
