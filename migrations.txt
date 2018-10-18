@@ -19,4 +19,4 @@ dotnet ef migrations add AddedAddress2
 dotnet ef database update
 
 dotnet ef migrations add AddedAddress2
-
+dotnet ef database update
